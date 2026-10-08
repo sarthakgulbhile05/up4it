@@ -838,6 +838,14 @@ export default function Home() {
               </fieldset>
             </div>
 
+            <button
+              className="mt-4 text-sm font-semibold text-[#146c5a] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#146c5a]"
+              onClick={() => setView("availability")}
+              type="button"
+            >
+              Share open availability
+            </button>
+
             {feedDisplay === "map" ? (
               <MapDiscovery
                 items={feedItems}
